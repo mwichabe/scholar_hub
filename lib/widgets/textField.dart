@@ -18,6 +18,7 @@ class TextFieldWidget extends StatelessWidget {
     return  TextField
       (
       //onChanged: onChange,
+      cursorColor: Colors.black,
       obscureText: obscureText,
       decoration: InputDecoration
         (
@@ -26,6 +27,7 @@ class TextFieldWidget extends StatelessWidget {
           (
           prefixIconData,
           size: 18,
+          color: Colors.black,
         ),
         filled: true,
         enabledBorder: UnderlineInputBorder

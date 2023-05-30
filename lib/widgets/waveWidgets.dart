@@ -19,6 +19,7 @@ class _WaveWidgetsState extends State<WaveWidgets> with TickerProviderStateMixin
   List<Offset> wavePoints = [];
   @override
   void initState() {
+    super.initState();
     // TODO: implement initState
     animationController= AnimationController(vsync: this, duration: Duration(milliseconds: 8000))
     ..addListener(() {
@@ -45,9 +46,9 @@ class _WaveWidgetsState extends State<WaveWidgets> with TickerProviderStateMixin
   }
   @override
   void dispose() {
-    // TODO: implement dispose
-    super.dispose();
+    animationController.stop(canceled: true);
     animationController.dispose();
+    super.dispose();
   }
   @override
   Widget build(BuildContext context) {
