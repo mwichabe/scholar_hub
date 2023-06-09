@@ -11,7 +11,7 @@ class LogIn extends StatefulWidget {
 }
 
 class _LogInState extends State<LogIn> {
-  TextEditingController _emailEditingController = new TextEditingController();
+  final TextEditingController _emailEditingController =  TextEditingController();
   @override
   void dispose() {
     _emailEditingController.dispose();
@@ -29,7 +29,7 @@ class _LogInState extends State<LogIn> {
             padding: const EdgeInsets.only(top: 50),
             child: Column(
               children: [
-                Text(
+                const Text(
                   'LOG IN', style: TextStyle
                   (
                     color: Colors.black,

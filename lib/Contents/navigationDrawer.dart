@@ -16,19 +16,22 @@ class _Navigation_drawerState extends State<Navigation_drawer> {
       child: ListView(
         padding: EdgeInsets.zero,
         children: [
-          UserAccountsDrawerHeader(
-              decoration: const BoxDecoration
-                (
-                color: Colors.green,
-              ),
-              accountName:  Text('first name secnd name'),
-              accountEmail: Text('your email'),
-              currentAccountPicture:
-               CircleAvatar(
-                backgroundColor: Colors.white,
-                radius: 70,
-                child:  Image.network('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Fperson_2815428&psig=AOvVaw3AEZS1m0zpCDc9kDAvuDbj&ust=1685547584222000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCMiO1Zuwnf8CFQAAAAAdAAAAABAO'),
-              )
+          InkWell(
+            onTap: ()=> Navigator.pushReplacementNamed(context, 'profile'),
+            child: UserAccountsDrawerHeader(
+                decoration: const BoxDecoration
+                  (
+                  color: Colors.green,
+                ),
+                accountName:  Text('first name secnd name'),
+                accountEmail: Text('your email'),
+                currentAccountPicture:
+                 CircleAvatar(
+                  backgroundColor: Colors.white,
+                  radius: 70,
+                  child:  Image.network('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Fperson_2815428&psig=AOvVaw3AEZS1m0zpCDc9kDAvuDbj&ust=1685547584222000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCMiO1Zuwnf8CFQAAAAAdAAAAABAO'),
+                )
+            ),
           ),
           ListTile(
             leading: Icon(Icons.admin_panel_settings_outlined,color: Colors.green,),
