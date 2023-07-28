@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "514804037190",
+    "project_id": "scholar-hub-5966a",
+    "storage_bucket": "scholar-hub-5966a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:514804037190:android:1f0ce8930e097205eabc47",
+        "android_client_info": {
+          "package_name": "com.example.scholar_hub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "514804037190-vg1p55im7l1lmgbec4fb7kj7f153cede.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.scholar_hub",
+            "certificate_hash": "e5356dfc3b9e02c311fed555663d831b4aa66e98"
+          }
+        },
+        {
+          "client_id": "514804037190-cu3gfgv8avbh52v714uni67l6p0jggmi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAqaSDk6AYm1pQiCVjvCICUuwFKv7YHtU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "514804037190-cu3gfgv8avbh52v714uni67l6p0jggmi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

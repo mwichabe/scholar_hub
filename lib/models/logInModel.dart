@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:scholar_hub/Global.dart';
+import 'package:scholar_hub/constants/Global.dart';
 class LogInModel extends ChangeNotifier
 {
   get isVisible => _isVisible;

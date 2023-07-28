@@ -43,10 +43,10 @@ class _AdminLogInState extends State<AdminLogIn> {
               mainAxisAlignment: MainAxisAlignment.center,
               children:
               [
-                Icon(Icons.lock,
+                const Icon(Icons.lock,
                   size: 80,
                 color: Colors.green,),
-                SizedBox(height: 10,),
+                const SizedBox(height: 10,),
                 Padding(
                   padding: const EdgeInsets.all(20.0),
                   child: Form(
@@ -58,38 +58,38 @@ class _AdminLogInState extends State<AdminLogIn> {
                             (
                             decoration: InputDecoration
                               (
-                              label: Text('Enter admin email',style: TextStyle(color: Colors.green)),
-                                border: UnderlineInputBorder(
+                              label: const Text('Enter admin email',style: TextStyle(color: Colors.green)),
+                                border: const UnderlineInputBorder(
                                     borderSide: BorderSide(color: Colors.green)
                                 ),
                               focusedBorder: OutlineInputBorder
                                 (
-                                borderSide: BorderSide(color: Colors.green),
+                                borderSide: const BorderSide(color: Colors.green),
                                 borderRadius: BorderRadius.circular(10),
                               )
                             ),
                             controller: _adminemailController,
                             cursorColor: Colors.green,
-                            style: TextStyle(color: Colors.green),
+                            style: const TextStyle(color: Colors.green),
                           ),
                           const SizedBox(height: 10,),
                           TextFormField
                             (
                             decoration:  InputDecoration
                               (
-                              label: Text('Enter admin email',style: TextStyle(color: Colors.green)),
-                                border: UnderlineInputBorder(
+                              label: const Text('Enter admin email',style: TextStyle(color: Colors.green)),
+                                border: const UnderlineInputBorder(
                                   borderSide: BorderSide(color: Colors.green)
                                 ),
                               focusedBorder:OutlineInputBorder
                                 (
                                 borderRadius: BorderRadius.circular(10),
-                                borderSide: BorderSide(color: Colors.green)
+                                borderSide: const BorderSide(color: Colors.green)
                               ),
                             ),
                             controller: _adminpassController,
                             cursorColor: Colors.green,
-                            style: TextStyle(color: Colors.green),
+                            style: const TextStyle(color: Colors.green),
                           )
                         ],
                       )
@@ -111,7 +111,7 @@ class _AdminLogInState extends State<AdminLogIn> {
                         Fluttertoast.showToast(msg: 'You do not have admin privileges');
                       }
                     },
-                    child: Text('Log in As Admin',style: TextStyle(color: Colors.black),)
+                    child: const Text('Log in As Admin',style: TextStyle(color: Colors.black),)
                 )
               ],
             ),

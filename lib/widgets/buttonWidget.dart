@@ -23,7 +23,7 @@ class ButtonWidget extends StatelessWidget {
         child: InkWell(
           onTap: ()
           {
-            hasBoader ? {Navigator.pushReplacementNamed(context, '/signUp')}
+            hasBoader ? {Navigator.pushReplacementNamed(context, 'termsAndCondition')}
                 :
                 Navigator.pushReplacementNamed(context, 'home');
           } ,
